@@ -1,6 +1,6 @@
 {
-  "name": "react-crypto-cards",
-  "version": "0.8.3",
+  "name": "@martinedelman/react-crypto-cards",
+  "version": "1.0.0",
   "description": "Beautiful credit cards for your payment forms",
   "author": "AMARO Fashion <tech@amaro.com>",
   "contributors": [
@@ -102,6 +102,7 @@
     "watch-run": "^1.2.5"
   },
   "scripts": {
+    "start": "npm build",
     "build": "npm run clean && npm run build:commonjs && npm run build:es && npm run build:styles",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src -d lib",
     "build:es": "cross-env NODE_ENV=production babel src -d es",
@@ -130,11 +131,5 @@
       "path": "./lib/index.js",
       "limit": "6 kB"
     }
-  ],
-  "husky": {
-    "hooks": {
-      "post-merge": "repo-tools install-packages",
-      "pre-commit": "repo-tools check-remote && npm run validate"
-    }
-  }
+  ]
 }

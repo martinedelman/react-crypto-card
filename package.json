@@ -102,7 +102,6 @@
     "watch-run": "^1.2.5"
   },
   "scripts": {
-    "start": "npm build",
     "build": "npm run clean && npm run build:commonjs && npm run build:es && npm run build:styles",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src -d lib",
     "build:es": "cross-env NODE_ENV=production babel src -d es",

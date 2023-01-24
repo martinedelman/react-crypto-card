@@ -119,11 +119,11 @@ var ReactCryptoCards = /*#__PURE__*/function (_React$Component) {
       }, cvc), /*#__PURE__*/React.createElement("div", {
         className: "rccs__numberAndName"
       }, /*#__PURE__*/React.createElement("div", {
-        className: "rccs__numberLabel"
+        className: "rccs__Label"
       }, "NroCuenta"), /*#__PURE__*/React.createElement("div", {
         className: ["rccs__number", number.replace(/ /g, "").length > 16 ? "rccs__number--large" : "", focused === "number" ? "rccs--focused" : "", number.substr(0, 1) !== "•" ? "rccs--filled" : ""].join(" ").trim()
       }, number), /*#__PURE__*/React.createElement("div", {
-        className: "rccs__nameLabel"
+        className: "rccs__Label"
       }, "CARDHOLDER"), /*#__PURE__*/React.createElement("div", {
         className: ["rccs__name", focused === "name" ? "rccs--focused" : "", name ? "rccs--filled" : ""].join(" ").trim()
       }, name || placeholders.name)), /*#__PURE__*/React.createElement("div", {

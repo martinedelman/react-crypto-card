@@ -297,17 +297,42 @@ $rccs-visaelectron-logo: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBl
     }
   }
 
+  &__numberLabel {
+    color: #ffffffa3;
+    clear: both;
+    font-family: $rccs-number-font-family;
+    font-size: 15px;
+    left: 10%;
+    position: absolute;
+    top: 38%;
+  }
+
   &__number {
     clear: both;
     font-family: $rccs-number-font-family;
     font-size: $rccs-number-font-size;
     left: 10%;
     position: absolute;
-    top: 45%;
+    top: 46%;
 
     &.rccs__number--large {
       font-size: $rccs-number-font-size * 0.85;
     }
+  }
+
+  &__nameLabel {
+    color: #ffffffa3;
+    bottom: 25%;
+    font-family: "Consolas", "Courier", monospace;
+    font-size: 12px;
+    left: 10%;
+    line-height: 1;
+    overflow: hidden;
+    position: absolute;
+    text-align: left;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    width: 60%;
   }
 
   &__name {

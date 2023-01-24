@@ -198,7 +198,7 @@ class ReactCryptoCards extends React.Component {
               {cvc}
             </div>
             <div className="rccs__numberAndName">
-              <div>NroCuenta</div>
+              <div className="rccs__numberLabel">NroCuenta</div>
               <div
                 className={[
                   "rccs__number",
@@ -213,7 +213,7 @@ class ReactCryptoCards extends React.Component {
               >
                 {number}
               </div>
-              <div>CARDHOLDER</div>
+              <div className="rccs__nameLabel">CARDHOLDER</div>
               <div
                 className={[
                   "rccs__name",

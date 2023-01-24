@@ -118,9 +118,13 @@ var ReactCryptoCards = /*#__PURE__*/function (_React$Component) {
         className: ["rccs__cvc__front", focused === "cvc" ? "rccs--focused" : ""].join(" ").trim()
       }, cvc), /*#__PURE__*/React.createElement("div", {
         className: "rccs__numberAndName"
-      }, /*#__PURE__*/React.createElement("div", null, "NroCuenta"), /*#__PURE__*/React.createElement("div", {
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "rccs__numberLabel"
+      }, "NroCuenta"), /*#__PURE__*/React.createElement("div", {
         className: ["rccs__number", number.replace(/ /g, "").length > 16 ? "rccs__number--large" : "", focused === "number" ? "rccs--focused" : "", number.substr(0, 1) !== "•" ? "rccs--filled" : ""].join(" ").trim()
-      }, number), /*#__PURE__*/React.createElement("div", null, "CARDHOLDER"), /*#__PURE__*/React.createElement("div", {
+      }, number), /*#__PURE__*/React.createElement("div", {
+        className: "rccs__nameLabel"
+      }, "CARDHOLDER"), /*#__PURE__*/React.createElement("div", {
         className: ["rccs__name", focused === "name" ? "rccs--focused" : "", name ? "rccs--filled" : ""].join(" ").trim()
       }, name || placeholders.name)), /*#__PURE__*/React.createElement("div", {
         className: ["rccs__expiry", focused === "expiry" ? "rccs--focused" : "", expiry.substr(0, 1) !== "•" ? "rccs--filled" : ""].join(" ").trim()
